@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>StudentScholarships.org — Largest Collection of Scholarships on the Web</title>
+  <meta name="description" content="Find, match and apply for vetted scholarships. StudentScholarships.org has been the web's most comprehensive scholarship database since 2003."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="header" id="site-header">
+  <div class="container header-inner">
+
+    <!-- Brand: left side -->
+    <a class="brand" href="#" aria-label="StudentScholarships.org home">
+      <span class="brand-mark">StudentScholarships<span class="brand-dot">.</span>org</span>
+      <span class="brand-tag">Largest Collection of Scholarships on the Web</span>
+    </a>
+
+    <!-- Hamburger: mobile only -->
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" id="menu-btn">
+      <span></span><span></span><span></span>
+    </button>
+
+    <!-- Nav: right side, all on one line -->
+    <nav class="primary" id="primary-nav" aria-label="Primary navigation">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#featured">Scholarships</a></li>
+        <li><a href="#">Posters</a></li>
+        <li><a href="#">College Majors</a></li>
+        <li><a href="#">School Profiles</a></li>
+        <li><a href="#">Newsletter</a></li>
+        <li class="nav-search-item">
+          <a href="#" class="nav-search" aria-label="Search">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+            Search
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="hero">
+  <div class="hero-bg">
+    <!-- SVG-based hero illustration — editorial campus scene -->
+    <svg class="hero-svg" viewBox="0 0 1440 680" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#c8d8e8"/>
+          <stop offset="100%" stop-color="#e8e0cc"/>
+        </linearGradient>
+        <linearGradient id="heroOverlay" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0%" stop-color="#1a2238" stop-opacity="0.88"/>
+          <stop offset="55%" stop-color="#1a2238" stop-opacity="0.55"/>
+          <stop offset="100%" stop-color="#1a2238" stop-opacity="0.1"/>
+        </linearGradient>
+        <linearGradient id="heroBottom" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#1a2238" stop-opacity="0"/>
+          <stop offset="100%" stop-color="#1a2238" stop-opacity="0.6"/>
+        </linearGradient>
+        <linearGradient id="buildingGrad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#d4c9a8"/>
+          <stop offset="100%" stop-color="#b8a98a"/>
+        </linearGradient>
+        <linearGradient id="colGrad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#e8d9b8"/>
+          <stop offset="100%" stop-color="#c9b890"/>
+        </linearGradient>
+      </defs>
+      <!-- Sky -->
+      <rect width="1440" height="680" fill="url(#sky)"/>
+      <!-- Clouds -->
+      <ellipse cx="900" cy="120" rx="140" ry="40" fill="#fff" opacity="0.45"/>
+      <ellipse cx="1050" cy="100" rx="90" ry="30" fill="#fff" opacity="0.35"/>
+      <ellipse cx="1180" cy="140" rx="110" ry="35" fill="#fff" opacity="0.4"/>
+      <ellipse cx="750" cy="90" rx="80" ry="25" fill="#fff" opacity="0.3"/>
+      <!-- Ground -->
+      <rect x="0" y="480" width="1440" height="200" fill="#3a4a2a" opacity="0.7"/>
+      <rect x="0" y="480" width="1440" height="30" fill="#4a5e38" opacity="0.6"/>
+      <!-- Path -->
+      <polygon points="600,680 840,680 780,490 660,490" fill="#c8b890" opacity="0.5"/>
+      <!-- Main building body -->
+      <rect x="560" y="200" width="320" height="290" fill="url(#buildingGrad)"/>
+      <!-- Roof pediment -->
+      <polygon points="540,200 720,120 900,200" fill="#c8b688"/>
+      <!-- Pediment detail -->
+      <polygon points="600,200 720,145 840,200" fill="#d4c49a" opacity="0.6"/>
+      <!-- Columns -->
+      <rect x="580" y="200" width="22" height="280" fill="url(#colGrad)"/>
+      <rect x="626" y="200" width="22" height="280" fill="url(#colGrad)"/>
+      <rect x="672" y="200" width="22" height="280" fill="url(#colGrad)"/>
+      <rect x="718" y="200" width="22" height="280" fill="url(#colGrad)"/>
+      <rect x="764" y="200" width="22" height="280" fill="url(#colGrad)"/>
+      <rect x="810" y="200" width="22" height="280" fill="url(#colGrad)"/>
+      <rect x="856" y="200" width="22" height="280" fill="url(#colGrad)"/>
+      <!-- Column caps -->
+      <rect x="575" y="196" width="310" height="10" fill="#c8b688"/>
+      <rect x="575" y="478" width="310" height="12" fill="#c8b688"/>
+      <!-- Windows -->
+      <rect x="610" y="240" width="50" height="70" fill="#1a2238" opacity="0.7" rx="2"/>
+      <rect x="675" y="240" width="50" height="70" fill="#1a2238" opacity="0.7" rx="2"/>
+      <rect x="740" y="240" width="50" height="70" fill="#1a2238" opacity="0.7" rx="2"/>
+      <rect x="805" y="240" width="50" height="70" fill="#1a2238" opacity="0.7" rx="2"/>
+      <!-- Window highlights -->
+      <rect x="610" y="240" width="50" height="5" fill="#e8d8b0" opacity="0.3"/>
+      <rect x="675" y="240" width="50" height="5" fill="#e8d8b0" opacity="0.3"/>
+      <rect x="740" y="240" width="50" height="5" fill="#e8d8b0" opacity="0.3"/>
+      <rect x="805" y="240" width="50" height="5" fill="#e8d8b0" opacity="0.3"/>
+      <!-- Door -->
+      <rect x="690" y="380" width="60" height="110" fill="#1a2238" opacity="0.8" rx="30 30 0 0"/>
+      <rect x="695" y="385" width="50" height="100" fill="#1a2238" opacity="0.6" rx="25 25 0 0"/>
+      <!-- Side wings -->
+      <rect x="380" y="280" width="185" height="210" fill="#c8b890" opacity="0.7"/>
+      <rect x="870" y="280" width="185" height="210" fill="#c8b890" opacity="0.7"/>
+      <!-- Wing windows -->
+      <rect x="400" y="310" width="40" height="55" fill="#1a2238" opacity="0.5" rx="2"/>
+      <rect x="455" y="310" width="40" height="55" fill="#1a2238" opacity="0.5" rx="2"/>
+      <rect x="510" y="310" width="40" height="55" fill="#1a2238" opacity="0.5" rx="2"/>
+      <rect x="895" y="310" width="40" height="55" fill="#1a2238" opacity="0.5" rx="2"/>
+      <rect x="950" y="310" width="40" height="55" fill="#1a2238" opacity="0.5" rx="2"/>
+      <rect x="1005" y="310" width="40" height="55" fill="#1a2238" opacity="0.5" rx="2"/>
+      <!-- Trees -->
+      <rect x="280" y="380" width="18" height="110" fill="#4a3520"/>
+      <ellipse cx="289" cy="370" rx="55" ry="70" fill="#2d4a1a"/>
+      <ellipse cx="269" cy="390" rx="35" ry="50" fill="#3a5e22"/>
+      <rect x="1140" y="380" width="18" height="110" fill="#4a3520"/>
+      <ellipse cx="1149" cy="370" rx="55" ry="70" fill="#2d4a1a"/>
+      <ellipse cx="1169" cy="390" rx="35" ry="50" fill="#3a5e22"/>
+      <!-- More trees -->
+      <rect x="180" y="400" width="14" height="90" fill="#4a3520"/>
+      <ellipse cx="187" cy="390" rx="45" ry="60" fill="#243c14"/>
+      <rect x="1240" y="400" width="14" height="90" fill="#4a3520"/>
+      <ellipse cx="1247" cy="390" rx="45" ry="60" fill="#243c14"/>
+      <!-- Students silhouettes -->
+      <ellipse cx="490" cy="490" rx="12" ry="20" fill="#1a2238" opacity="0.5"/>
+      <ellipse cx="490" cy="475" rx="8" ry="8" fill="#1a2238" opacity="0.5"/>
+      <ellipse cx="520" cy="488" rx="11" ry="18" fill="#1a2238" opacity="0.4"/>
+      <ellipse cx="520" cy="474" rx="7" ry="7" fill="#1a2238" opacity="0.4"/>
+      <ellipse cx="940" cy="490" rx="12" ry="20" fill="#1a2238" opacity="0.5"/>
+      <ellipse cx="940" cy="475" rx="8" ry="8" fill="#1a2238" opacity="0.5"/>
+      <!-- Overlay layers -->
+      <rect width="1440" height="680" fill="url(#heroOverlay)"/>
+      <rect width="1440" height="680" fill="url(#heroBottom)"/>
+    </svg>
+  </div>
+
+  <div class="hero-content">
+    <div class="container">
+      <p class="hero-eyebrow">Since 2003 · 100% Free to Use</p>
+      <h1 class="hero-title">Scholarships that open<br>the doors to your future.</h1>
+      <p class="hero-sub">Search the largest vetted scholarship database on the web — curated, verified, and matched to who you are and what you study.</p>
+      <div class="hero-actions">
+        <a href="#find" class="btn btn-primary">Search Scholarships</a>
+        <a href="#find" class="btn btn-ghost">Find a Match</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hstat"><strong>20+</strong><span>Years of Service</span></div>
+        <div class="hstat-div"></div>
+        <div class="hstat"><strong>100%</strong><span>Free to Use</span></div>
+        <div class="hstat-div"></div>
+        <div class="hstat"><strong>Thousands</strong><span>of Scholarships</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FIND SCHOLARSHIPS ===== -->
+<section class="find" id="find">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-eyebrow">Find Scholarships</div>
+      <h2 class="section-title">Search the largest vetted database on the web</h2>
+      <p class="section-sub">Three ways to get started — pick the one that fits you.</p>
+    </div>
+    <div class="find-actions">
+      <a href="#" class="find-card">
+        <div class="find-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        </div>
+        <div>
+          <strong>Scholarship Search</strong>
+          <span>Browse our full database by category, deadline, and value</span>
+        </div>
+        <svg class="find-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="#" class="find-card">
+        <div class="find-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </div>
+        <div>
+          <strong>Scholarship Match</strong>
+          <span>Answer a few questions — we'll find scholarships suited to you</span>
+        </div>
+        <svg class="find-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="#" class="find-card">
+        <div class="find-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </div>
+        <div>
+          <strong>Newsletter Sign Up</strong>
+          <span>Receive new scholarships directly to your inbox each week</span>
+        </div>
+        <svg class="find-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== INTRO + SIDEBAR ===== -->
+<section class="with-sidebar">
+  <div class="container sidebar-grid">
+    <aside class="contents" aria-label="Page contents">
+      <div class="aside-label">Contents</div>
+      <ul>
+        <li><a href="#featured">Scholarships</a></li>
+        <li><a href="#">Newsletter</a></li>
+        <li><a href="#">Scholarship Match</a></li>
+        <li><a href="#managed">Managed Awards</a></li>
+        <li><a href="#winners">Recent Winners</a></li>
+      </ul>
+    </aside>
+    <div class="intro">
+      <div class="section-eyebrow">Scholarships &amp; more</div>
+      <h2>A trusted source for students &amp; organizations since 2003.</h2>
+      <p>StudentScholarships.org has been providing scholarship information to students and scholarship management services to organizations for over two decades.</p>
+      <p>Our scholarship database is considered the largest and most comprehensive source for finding scholarships online — and is 100% free for the public to use.</p>
+      <div class="intro-links">
+        <a href="#featured">View Scholarships</a>
+        <a href="#">Scholarship Newsletter</a>
+        <a href="#">Scholarship Match</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FEATURED SCHOLARSHIPS ===== -->
+<section class="featured" id="featured">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-eyebrow">Featured</div>
+      <h2 class="section-title">Featured Scholarships</h2>
+    </div>
+    <div class="cards">
+      <article class="card">
+        <div class="card-meta">
+          <span><strong>Value</strong>$500</span>
+          <span><strong>Awards</strong>1</span>
+          <span><strong>Deadline</strong>Aug 31, 2026</span>
+        </div>
+        <h3>Summitt Physical Therapy Scholarship</h3>
+        <p>An excellent opportunity for students to apply for an award while writing about a topic that is practical, relatable, and easy to understand. Physical therapy plays an important role in helping people stay active and recover from injury.</p>
+        <a href="#" class="btn btn-dark">Apply Now</a>
+      </article>
+      <article class="card">
+        <div class="card-meta">
+          <span><strong>Value</strong>$500</span>
+          <span><strong>Awards</strong>1</span>
+          <span><strong>Deadline</strong>Aug 31, 2026</span>
+        </div>
+        <h3>Summitt Physical Therapy Scholarship</h3>
+        <p>An excellent opportunity for students to apply for an award while writing about a topic that is practical, relatable, and easy to understand. Physical therapy plays a vital role in modern healthcare.</p>
+        <a href="#" class="btn btn-dark">Apply Now</a>
+      </article>
+      <article class="card card--accent">
+        <div class="card-badge">Most Popular</div>
+        <div class="card-meta">
+          <span><strong>Value</strong>$1,500</span>
+          <span><strong>Awards</strong>2</span>
+          <span><strong>Deadline</strong>Nov 15, 2026</span>
+        </div>
+        <h3>10 Words or Less Scholarship</h3>
+        <p>Provided by StudentScholarships.org — a fun opportunity for students to show off their creativity in just a few words. Celebrates clever thinking and the power of saying something memorable without saying too much.</p>
+        <a href="#" class="btn btn-primary">Apply Now</a>
+      </article>
+      <article class="card card--accent">
+        <div class="card-badge">Most Popular</div>
+        <div class="card-meta">
+          <span><strong>Value</strong>$1,500</span>
+          <span><strong>Awards</strong>2</span>
+          <span><strong>Deadline</strong>Nov 15, 2026</span>
+        </div>
+        <h3>10 Words or Less Scholarship</h3>
+        <p>A fun opportunity for students to show off their creativity in just a few words, celebrating clever thinking and big ideas. Show us what you can say in ten words or fewer.</p>
+        <a href="#" class="btn btn-primary">Apply Now</a>
+      </article>
+    </div>
+    <div class="view-all-wrap">
+      <a href="#" class="btn btn-outline">View All Scholarships</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WINNERS ===== -->
+<section class="winners" id="winners">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-eyebrow">Recent Recipients</div>
+      <h2 class="section-title">Scholarship Winners</h2>
+    </div>
+    <div class="winners-grid">
+      <div class="winner"><span class="w-name">Kimaya Mathura</span><span class="w-place">Mississippi, ON</span><span class="w-year">2026</span></div>
+      <div class="winner"><span class="w-name">Sandy Valencia</span><span class="w-place">Del Rio, BC</span><span class="w-year">2024</span></div>
+      <div class="winner"><span class="w-name">Azolla Torres</span><span class="w-place">San Antonio, TX</span><span class="w-year">2024</span></div>
+      <div class="winner"><span class="w-name">Paige German</span><span class="w-place">Clarks, IA</span><span class="w-year">2022</span></div>
+      <div class="winner"><span class="w-name">Nathan Peralta</span><span class="w-place">Palmdale, CA</span><span class="w-year">2025</span></div>
+      <div class="winner"><span class="w-name">Kimaya Mathura</span><span class="w-place">Mississippi, ON</span><span class="w-year">2026</span></div>
+      <div class="winner"><span class="w-name">Sandy Valencia</span><span class="w-place">Del Rio, BC</span><span class="w-year">2024</span></div>
+      <div class="winner"><span class="w-name">Azolla Torres</span><span class="w-place">San Antonio, TX</span><span class="w-year">2024</span></div>
+      <div class="winner"><span class="w-name">Paige German</span><span class="w-place">Clarks, IA</span><span class="w-year">2022</span></div>
+      <div class="winner"><span class="w-name">Nathan Peralta</span><span class="w-place">Palmdale, CA</span><span class="w-year">2025</span></div>
+      <div class="winner"><span class="w-name">Kimaya Mathura</span><span class="w-place">Mississippi, ON</span><span class="w-year">2026</span></div>
+      <div class="winner"><span class="w-name">Sandy Valencia</span><span class="w-place">Del Rio, BC</span><span class="w-year">2024</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MANAGED SCHOLARSHIPS ===== -->
+<section class="managed" id="managed">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-eyebrow">Administered by us</div>
+      <h2 class="section-title">Managed Scholarships</h2>
+    </div>
+    <div class="managed-list">
+      <article class="managed-card">
+        <div class="mc-sidebar">
+          <div class="mc-label">10 Words or Less</div>
+          <div class="mc-stat"><span class="mc-val">$1,500</span><span class="mc-key">Award Value</span></div>
+          <div class="mc-stat"><span class="mc-val">Nov 15, 2026</span><span class="mc-key">Deadline</span></div>
+          <div class="mc-stat"><span class="mc-val">2</span><span class="mc-key">Awards</span></div>
+        </div>
+        <div class="mc-body">
+          <h3>10 Words or Less Scholarship</h3>
+          <p>Provided by StudentScholarships.org. A fun opportunity for students to show off their creativity in just a few words — celebrating clever thinking, big ideas, and the power of saying something memorable without saying too much.</p>
+          <a href="#" class="btn btn-primary">Apply Now</a>
+        </div>
+        <div class="mc-qr" aria-label="QR code for scholarship application"></div>
+      </article>
+      <article class="managed-card">
+        <div class="mc-sidebar">
+          <div class="mc-label">10 Words or Less</div>
+          <div class="mc-stat"><span class="mc-val">$1,500</span><span class="mc-key">Award Value</span></div>
+          <div class="mc-stat"><span class="mc-val">Nov 15, 2026</span><span class="mc-key">Deadline</span></div>
+          <div class="mc-stat"><span class="mc-val">2</span><span class="mc-key">Awards</span></div>
+        </div>
+        <div class="mc-body">
+          <h3>10 Words or Less Scholarship</h3>
+          <p>A fun opportunity for students to show off their creativity in just a few words. Celebrates clever thinking, big ideas, and the power of expression distilled to its essence.</p>
+          <a href="#" class="btn btn-primary">Apply Now</a>
+        </div>
+        <div class="mc-qr" aria-label="QR code for scholarship application"></div>
+      </article>
+      <article class="managed-card">
+        <div class="mc-sidebar">
+          <div class="mc-label">10 Words or Less</div>
+          <div class="mc-stat"><span class="mc-val">$1,500</span><span class="mc-key">Award Value</span></div>
+          <div class="mc-stat"><span class="mc-val">Nov 15, 2026</span><span class="mc-key">Deadline</span></div>
+          <div class="mc-stat"><span class="mc-val">2</span><span class="mc-key">Awards</span></div>
+        </div>
+        <div class="mc-body">
+          <h3>10 Words or Less Scholarship</h3>
+          <p>Celebrating clever thinking and the power of saying something memorable without saying too much. Show your creativity in ten words or fewer and win a significant award.</p>
+          <a href="#" class="btn btn-primary">Apply Now</a>
+        </div>
+        <div class="mc-qr" aria-label="QR code for scholarship application"></div>
+      </article>
+      <article class="managed-card">
+        <div class="mc-sidebar">
+          <div class="mc-label">10 Words or Less</div>
+          <div class="mc-stat"><span class="mc-val">$1,500</span><span class="mc-key">Award Value</span></div>
+          <div class="mc-stat"><span class="mc-val">Nov 15, 2026</span><span class="mc-key">Deadline</span></div>
+          <div class="mc-stat"><span class="mc-val">2</span><span class="mc-key">Awards</span></div>
+        </div>
+        <div class="mc-body">
+          <h3>10 Words or Less Scholarship</h3>
+          <p>Show off your creativity in just a few words. Big ideas, distilled. We're looking for students who understand that brevity is the soul of wit — and great writing.</p>
+          <a href="#" class="btn btn-primary">Apply Now</a>
+        </div>
+        <div class="mc-qr" aria-label="QR code for scholarship application"></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STYLE GUIDE ===== -->
+<section class="styleguide" id="styleguide">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-eyebrow">Reference</div>
+      <h2 class="section-title">Style Guide</h2>
+      <p class="section-sub">Design tokens defined as CSS custom properties — edit once, applies everywhere.</p>
+    </div>
+    <div class="sg-grid">
+      <div class="sg-col">
+        <h3 class="sg-heading">Colour Palette</h3>
+        <div class="swatches">
+          <div class="swatch">
+            <div class="chip" style="background:#faf8f3;border:1px solid #e6e1d4"></div>
+            <div class="swatch-info"><strong>Paper</strong><code>#FAF8F3</code><em>Background</em></div>
+          </div>
+          <div class="swatch">
+            <div class="chip" style="background:#1a2238"></div>
+            <div class="swatch-info"><strong>Ink</strong><code>#1A2238</code><em>Navy / Headings</em></div>
+          </div>
+          <div class="swatch">
+            <div class="chip" style="background:#8a6d3b"></div>
+            <div class="swatch-info"><strong>Gold</strong><code>#8A6D3B</code><em>Accent / CTAs</em></div>
+          </div>
+          <div class="swatch">
+            <div class="chip" style="background:#b8945a"></div>
+            <div class="swatch-info"><strong>Gold Light</strong><code>#B8945A</code><em>Highlights</em></div>
+          </div>
+          <div class="swatch">
+            <div class="chip" style="background:#e6e1d4;border:1px solid #d4cfc5"></div>
+            <div class="swatch-info"><strong>Rule</strong><code>#E6E1D4</code><em>Borders / Lines</em></div>
+          </div>
+          <div class="swatch">
+            <div class="chip" style="background:#6b7280"></div>
+            <div class="swatch-info"><strong>Muted</strong><code>#6B7280</code><em>Secondary text</em></div>
+          </div>
+        </div>
+      </div>
+      <div class="sg-col">
+        <h3 class="sg-heading">Typography Scale</h3>
+        <div class="type-samples">
+          <div class="type-sample">
+            <small>Display · Cormorant Garamond 500 · ~4rem</small>
+            <span class="t-display">Open doors to your future.</span>
+          </div>
+          <div class="type-sample">
+            <small>H2 · Cormorant Garamond 500 · ~2.4rem</small>
+            <span class="t-h2">Featured Scholarships</span>
+          </div>
+          <div class="type-sample">
+            <small>Eyebrow · Inter 500 · 0.28em tracking · uppercase</small>
+            <span class="t-eyebrow">Since 2003</span>
+          </div>
+          <div class="type-sample">
+            <small>Body · Inter 400 · 1rem · line-height 1.55</small>
+            <span class="t-body">The largest vetted scholarship database on the web — curated, verified, and matched to who you are and what you study.</span>
+          </div>
+          <div class="type-sample">
+            <small>Caption / UI · Inter 400 · 0.78rem · tracked</small>
+            <span class="t-caption">Value · Awards · Deadline</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sg-spacing">
+      <h3 class="sg-heading">Spacing Scale</h3>
+      <div class="spacing-row">
+        <div class="sp-item"><div class="sp-box" style="width:8px;height:8px"></div><code>--s-1 · 0.5rem</code></div>
+        <div class="sp-item"><div class="sp-box" style="width:16px;height:16px"></div><code>--s-2 · 1rem</code></div>
+        <div class="sp-item"><div class="sp-box" style="width:24px;height:24px"></div><code>--s-3 · 1.5rem</code></div>
+        <div class="sp-item"><div class="sp-box" style="width:40px;height:40px"></div><code>--s-4 · 2.5rem</code></div>
+        <div class="sp-item"><div class="sp-box" style="width:64px;height:64px"></div><code>--s-5 · 4rem</code></div>
+        <div class="sp-item"><div class="sp-box" style="width:96px;height:96px"></div><code>--s-6 · 6rem</code></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="brand-mark">StudentScholarships<span class="brand-dot">.</span>org</span>
+      <span class="footer-tag">Largest Collection of Scholarships on the Web · Since 2003</span>
+    </div>
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <a href="#">Home</a>
+      <a href="#">About Us</a>
+      <a href="#">Scholarships</a>
+      <a href="#">Posters</a>
+      <a href="#">College Majors</a>
+      <a href="#">School Profiles</a>
+      <a href="#">Newsletter</a>
+    </nav>
+    <div class="footer-legal">
+      <span>© 2026 StudentScholarships.org · All rights reserved.</span>
+      <span><a href="#">Privacy</a> · <a href="#">Terms</a> · <a href="#">Contact</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Header scroll shadow
+  const header = document.getElementById('site-header');
+  window.addEventListener('scroll', () => {
+    header.classList.toggle('scrolled', window.scrollY > 20);
+  });
+
+  // Mobile menu toggle
+  const btn = document.getElementById('menu-btn');
+  const nav = document.getElementById('primary-nav');
+  btn.addEventListener('click', () => {
+    const open = nav.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open);
+    btn.classList.toggle('active', open);
+  });
+
+  // Smooth reveal on scroll
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12 });
+
+  document.querySelectorAll('.card, .managed-card, .winner, .find-card').forEach(el => {
+    el.classList.add('reveal');
+    observer.observe(el);
+  });
+</script>
+</body>
+</html>
